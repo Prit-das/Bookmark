@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Mobile Menu */
+/* Hamberger Icon */
+.bars{
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    transition: all 0.5s;
+}
+.bar2{
+    transform: translateY(0.625rem);
+}
+.bar3{
+    transform: translateY(1.25rem);
+}
+.open .bars{
+    background-color: white;
+}
+.open .bar2{
+    display: none;
+}
+.open .bar1{
+    transform: rotate(32deg) translateY(8px) translateX(6px);
+    transform-origin: top;
+}
+.open .bar3{
+    transform: rotate(-32deg) translateY(8px) translateX(-6px);
+    transform-origin: top;
+}
+/* Mobile Menu */
+.menu-close{
+    top: -150%;
+    left: 0;
+    transition: all 0.5s;
+}
+.menu-open{
+    top: 0%;
+}
+
+/* Hero Image Element */
+.element{
+    position: absolute;
+    height: 18rem;
+    width: 100rem;
+    top: 40%;
+    left: 30%;
+    background-color: hsl(231, 69%, 60%);
+    z-index: 9;
+    border-radius: 100px;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+    <script src="script.js" defer></script>
+    <title>Bookmark</title>
+  </head>
+  <body>
+    <section id="outerwrapper" class="font-sans overflow-hidden">
+      <!-- Navigation Bar -->
+      <nav class="relative container mx-auto flex justify-between items-center py-10 px-6">
+        <!-- Logo -->
+        <img src="./images/logo-bookmark.svg" class="relative z-30">
+        <!-- Desktop Nav Elements -->
+        <div id="desktop_nav" class="hidden md:flex items-center gap-10">
+          <a href="#features" class="text-grayishBlue hover:text-softRed">FEATURES</a>
+          <a href="#download" class="text-grayishBlue hover:text-softRed">DOWNLOAD</a>
+          <a href="#faq" class="text-grayishBlue hover:text-softRed">FAQ</a>
+          <a href="#" class="text-white bg-softRed border-2 border-softRed rounded-md shadow-lg hover:bg-white hover:text-softRed py-2 px-6">LOGIN</a>
+        </div>
+        <!-- Hamberger Icon -->
+        <div class="sm:block md:hidden relative h-5 w-8 z-30 cursor-pointer" id="hamberger">
+          <span class="bars bar1"></span>
+          <span class="bars bar2"></span>
+          <span class="bars bar3"></span>
+        </div>
+      </nav>
+      <!-- Mobile Navigation -->
+      <nav class="absolute menu-close opacity-90 h-full w-full bg-veryDarkBlue flex flex-col items-center gap-y-3 z-20 py-36" id="mobileMenu">
+        <a href="#features" class="text-white hover:text-softRed">FEATURES</a>
+        <span class="h-[.10px] w-full bg-white opacity-60 mb-10"></span>
+        <a href="#download" class="text-white hover:text-softRed">DOWNLOAD</a>
+        <span class="h-[.10px] w-full bg-white opacity-60 mb-10"></span>
+        <a href="#faq" class="text-white hover:text-softRed">FAQ</a>
+        <span class="h-[.10px] w-full bg-white opacity-60 mb-10"></span>
+        <a href="#" class="text-white bg-softRed border-2 border-softRed rounded-md hover:bg-opacity-0 hover:text-softRed py-2 px-6">LOGIN</a>
+      </nav>
+      <!-- Hero Section -->
+      <div class="relative container mx-auto flex flex-col-reverse lg:flex-row justify-center items-center text-center lg:justify-start lg:text-left py-10 lg:py-16 px-6">
+        <!-- Left screen -->
+        <div class="relative lg:w-1/2 flex flex-col gap-6">
+          <h1 class="text-3xl lg:text-6xl font-semibold">A Simple Bookmark Manager</h1>
+          <p class="text-lg lg:text-2xl text-grayishBlue">A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
+          <!-- Button Group -->
+          <div class="flex gap-x-6 justify-center items-center lg:justify-start">
+            <a href="" class="bg-softBlue text-sm text-white font-semibold rounded-md border-2 border-softBlue hover:bg-opacity-0 hover:text-softBlue shadow-lg md:text-base py-4 px-3">Get It On Chrome</a>
+            <a href="" class="bg-slate-200 text-sm text-black font-semibold rounded-md border-2 border-slate-200 hover:bg-opacity-0 shadow-lg md:text-base py-4 px-3">Get It On Firefox</a>
+          </div>
+        </div>
+        <!-- Right Screen -->
+        <div class="relative lg:w-1/2">
+          <img src="./images/illustration-hero.svg" class="relative z-10">
+          <div class="element hidden lg:block"></div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
