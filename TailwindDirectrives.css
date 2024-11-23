@@ -52,3 +52,13 @@
     z-index: 9;
     border-radius: 100px;
 }
+.element2{
+    position: absolute;
+    height: 16rem;
+    width: 100rem;
+    top: 45%;
+    right: 60%;
+    background-color: hsl(231, 69%, 60%);
+    z-index: 9;
+    border-radius: 100px;
+}
