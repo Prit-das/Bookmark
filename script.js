@@ -1,11 +1,18 @@
 // Mobile Menu
 const hamberger = document.querySelector('#hamberger');
 const mobileMenu = document.querySelector('#mobileMenu');
+const logo = document.querySelector('#logo');
 
 hamberger.addEventListener('click',function () {
     hamberger.classList.toggle('open');
-    //todo image change 
     mobileMenu.classList.toggle('menu-open');
+    
+    //Logo change when mobile menu turns-on
+    if (mobileMenu.classList.contains('menu-open')) {
+        logo.setAttribute('src', './images/logo-bookmark-footer.svg')
+      } else {
+        logo.setAttribute('src', './images/logo-bookmark.svg')
+      }
 })
 
 // Tabs & Panels Configeration
